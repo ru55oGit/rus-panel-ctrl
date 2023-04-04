@@ -1,16 +1,22 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { ThreeCircles } from 'react-loader-spinner'
 import Box from '@mui/material/Box'
-import Avatar from '@mui/material/Avatar'
+import { useTheme } from '@mui/material'
 import useStyles from './styles'
 
 const Splash = () => {
   const classes = useStyles()
+  const theme = useTheme()
 
   return (
     <Box className={classes.boxContainer}>
-      <Avatar
-        src="/images/logo-rusmar003-257x59.jpg"
-        sx={{ height: 59, width: 257 }}
-        variant="square"
+      <ThreeCircles
+        ariaLabel="three-circles-rotating"
+        color={theme.palette.primary.main}
+        height="100"
+        visible
+        width="100"
+        wrapperStyle={{}}
       />
     </Box>
   )

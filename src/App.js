@@ -1,6 +1,6 @@
 import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles'
 import { Routes, Route, BrowserRouter as Router } from 'react-router-dom'
-import IntroPage from '../src/pages/introPage'
+import IntroPage from './pages/introPage'
 import theme from './theme'
 
 function App() {
